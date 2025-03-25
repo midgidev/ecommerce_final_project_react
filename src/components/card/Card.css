@@ -1,0 +1,16 @@
+/* Asegurando que la imagen cubra el área disponible sin distorsionar */
+.card-img-top {
+    object-fit: cover; /* Hace que la imagen cubra todo el espacio disponible */
+    height: 200px; /* Altura fija para la imagen */
+}
+
+/* Hacer que todas las cards tengan la misma altura */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Hacer que el card ocupe toda la altura disponible */
+}
+
+.card-body {
+    flex-grow: 1; /* Permite que el contenido del card crezca para llenar el espacio */
+}

@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #116e28;
+}
+
+a.navbar-brand{
+    justify-self: flex-start;
+}
+
+.nav-link{
+    text-underline: none;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+}
+.badge{
+    font-size: .6rem!important;
+}

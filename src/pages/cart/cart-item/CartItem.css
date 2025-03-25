@@ -1,0 +1,14 @@
+.inc-dec-btn{
+    width: 30px;
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.inc-dec-btn:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.cart-details{
+
+}
