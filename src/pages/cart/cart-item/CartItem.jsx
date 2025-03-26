@@ -11,12 +11,12 @@ function CartItem(props){
 	const onAdd = props.onAdd;
 	const onRemove = props.onRemove;
 	return (<>
-		<div className="h-100 d-flex flex-row gy-2" style={{width: '100%'}}>
+		<div className="h-100 d-flex flex-row gy-2 justify-content-center" style={{width: '100%'}}>
 			<div className="cart-image-wrapper me-4">
 				<img src={imgSrc} className="cart-image" alt="..."/>
 			</div>
 			<div className="cart-details d-flex flex-column">
-				<h6 className="mb-1">{title}</h6>
+				<h5 className="mb-1"><strong>{title}</strong></h5>
 				<span>{currencyFormat(price)}</span>
 				<div className="d-flex flex-row mb-1">
 					<button className="btn btn-outline-success btn-sm inc-dec-btn me-2" onClick={onRemove}>-</button>

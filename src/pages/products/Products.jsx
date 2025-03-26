@@ -18,9 +18,7 @@ function Products() {
 	}
 	return (
 		<>
-			<h1>Products</h1>
-			<button className={'btn btn-success'} onClick={()=>dispatch(addItemToCart({id: 5, quantity: 1}))}>Add to cart</button>
-			<div className="container">
+			<div className="container mt-5">
 				<div className="row g-3">
 					{
 						products.map(product=>
@@ -31,6 +29,7 @@ function Products() {
 									text={product.description}
 									imgSrc={product.image}
 									btnText={isProductInCart(product.id)?'Added':'Add to cart'}
+									disabled={isProductInCart(product.id)}
 									onClick={()=>!isProductInCart(product.id)?dispatch(addItemToCart({id: product.id, quantity: 1})):null}
 								></Card>
 							</div>

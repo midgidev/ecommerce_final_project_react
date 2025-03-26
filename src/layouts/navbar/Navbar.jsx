@@ -22,7 +22,7 @@ function Navbar() {
 						</div>
 
 						<div className="col-sm-4 d-flex flex-column align-items-center justify-content-center">
-							<a className="text-light fs-5 text-decoration-none"><span className="nav-link">Products</span></a>
+							<a className="text-light fs-5 text-decoration-none"><span className="nav-link">Plants</span></a>
 						</div>
 						<div className="col-sm-4 d-flex flex-column align-items-end justify-content-center fs-5">
 							<div className="nav-link" onClick={()=>{console.log("hola");navigate('/cart')}}>

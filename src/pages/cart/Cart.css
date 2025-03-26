@@ -6,3 +6,6 @@
     object-fit: cover;
     width: 200px;
 }
+.fit-content{
+    width: fit-content;
+}

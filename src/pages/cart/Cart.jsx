@@ -24,9 +24,8 @@ function Cart() {
 	}, 0);
 	return (
 		<>
-			<div className="container">
-				<h1>Cart</h1>
-				<h6>Total Cart Amount: {currencyFormat(totalAmount)}</h6>
+			<div className="container mt-5">
+				<h4 className="text-center">Total Cart Amount: {currencyFormat(totalAmount)}</h4>
 				{cartItems.map((cartItem)=>
 					<div className="cart-item-wrapper mb-2">
 						<CartItem key={cartItem.id}
@@ -41,8 +40,10 @@ function Cart() {
 							/>
 					</div>
 				)}
-				<button className={'btn btn-success'} onClick={() => navigate('/products')}>Continue Shopping</button>
-				<button className={'btn btn-success'} onClick={() => dispatch(addItemToCart({id: 5, quantity: 1}))}>Checkout</button>
+				<div className="d-flex justify-content-center flex-column align-items-center">
+					<button className={'btn btn-success fit-content mt-2'} onClick={() => navigate('/products')}>Continue Shopping</button>
+					<button className={'btn btn-success fit-content mt-2'} onClick={() => alert('Feature not implemented')}>Checkout</button>
+				</div>
 			</div>
 		</>
 	)
